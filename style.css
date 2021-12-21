@@ -12,7 +12,7 @@
     background-position: center;
     position: absolute;
     z-index: -1;
-    /* filter: blur(2.5px); */
+    /* filter: blur(2px); */
 }
 #main{
     display: flex;
@@ -37,6 +37,7 @@ input{
     height: 5vh;
     font-size: large;
     width: 50vw;
+    text-align: center;
     /* margin: auto;
     display: block; */
 }
