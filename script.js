@@ -10,6 +10,6 @@ async function main(place) {
     await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${place}&appid=${APIKEY}`).then(res=>res.json()).then(data=>arr=data)
     document.getElementById('location_name').innerText = arr.name
     document.getElementById('temprature').innerText = Math.floor(arr.main.temp - 273.15) + '°C'
-    document.getElementById('wind_speed').innerText = arr.wind.speed + 'm/s'
+    if(arr.wind.speed != 0){document.getElementById('wind_speed').innerText = arr.wind.speed + 'm/s'}
     document.getElementById('weather_type').innerText = arr.weather[0].main
 }
