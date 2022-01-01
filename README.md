@@ -1,0 +1,1 @@
+This is a vanilla js app that shows the weather of the location you enter
