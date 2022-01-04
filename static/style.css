@@ -6,6 +6,7 @@
     --color2: #406882;
     --color3: #6998AB;
     --color4: #B1D0E0;
+    /* --color5: #2a4d68; */
 }
 html{
     font-size: 25px;
@@ -15,9 +16,14 @@ html{
         font-size: 20px;
     }
 }
-@media(max-width:500px){
+@media(max-width:600px){
     html{
         font-size: 15px;
+    }
+}
+@media(max-width:450px){
+    html{
+        font-size: 12.5px;
     }
 }
 *{
@@ -58,11 +64,19 @@ body{
     font-size: 3rem;
     color:var(--color3);
 }
-#location{
+#get_location_div{
     color: var(--color4);
     font-size: 2rem;
-    text-align: center;
+    display: flex;
+    justify-content: center;
     font-weight: 500;
+}
+#location{
+    min-width: 50px;
+    min-height: 25px;
+    /* background-color: var(--color5); */
+    outline: 1px solid var(--color4);
+    padding: 2.5px 5px;
 }
 hr{
     border: 1px solid var(--color2);
