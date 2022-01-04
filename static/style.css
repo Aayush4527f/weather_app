@@ -44,7 +44,7 @@ body{
 #icon{
     width: 4rem;
     height: 4rem;
-    background-image: url(mist.png);
+    /* background-image: url(mist.png); */
     background-size: cover;
     margin: 0 2.5vw;
 }
